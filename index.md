@@ -1,5 +1,4 @@
 ---
-title: Welcome to my blog
+title: Madison Dyer
 ---
-
-yippee! we're learning things
+Welcome to my blog. I've always been interested in the intersection between humans and the natural world. Let's use GIS to explore!
