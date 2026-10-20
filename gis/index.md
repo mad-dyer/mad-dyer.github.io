@@ -1,4 +1,7 @@
-# Madison Dyer
+---
+title: "Portfolio"
+author: Madison Dyer
+---
 ## GIS Portfolio
 
 ### About
