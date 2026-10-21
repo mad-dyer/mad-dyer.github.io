@@ -1,3 +1,7 @@
+<html>
+<head>
+<title>Madison Dyer | Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style> 
     .button1 { 
         width:300px;
@@ -7,9 +11,11 @@
         color:black;
         border-radius: 20px;
     } 
-</style>
+</style> 
+</head>
+<body>
+<h1>Madison Dyer</h1>
 
-# Madison Dyer
 <button class="button1"
     onclick="window.location.href ='https://mad-dyer.github.io';">
     GIS Portfolio
@@ -19,6 +25,7 @@
     onclick="window.location.href ='https://mad-dyer.github.io';">
     LinkedIn
 </button>
-
----
-Welcome to my blog. I've always been interested in the intersection between humans and the natural world. Let's use GIS to explore!
+<hr>
+<p>Welcome to my home page. I've always been interested in the intersection between humans and the natural world. Let's use GIS to explore!</p>
+</body>
+</html>
