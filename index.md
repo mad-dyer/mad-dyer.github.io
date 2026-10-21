@@ -1,6 +1,4 @@
-<html>
-  <title>Madison Dyer | Home</title>
-  <style> 
+<style> 
     .button1 { 
         width:300px;
         height:50px;
@@ -9,8 +7,7 @@
         color:black;
         border-radius: 20px;
     } 
-  </style> 
-</html>
+</style>
 
 # Madison Dyer
 <button class="button1"
