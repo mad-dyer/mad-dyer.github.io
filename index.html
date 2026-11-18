@@ -11,7 +11,7 @@ body {
     background-image: url(https://upload.wikimedia.org/wikipedia/commons/c/c9/Hazy_blue_hour_in_Grand_Canyon.JPG?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original); /* The image used for background*/
     background-repeat: no-repeat; /* Do not repeat the image */
     background-position: center; /* Center the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
+    background-size: auto; /* Resize the background image to cover the entire container */
 }
 
 .container {
@@ -33,7 +33,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 20px;
+  width: 100%;
 }
 
 .link {
@@ -42,22 +42,33 @@ body {
 
 @media (min-width: 1200px) .container {
   max-width: 1140px;
-}
-@media (min-width: 992px) .container {
-  max-width: 960px;
-}
-@media (min-width: 768px) {
-.container {
-    max-width: 720px;
-  }
-
 .link {
     width: 100%;
   }
 }
+
+@media (min-width: 992px) .container {
+  max-width: 960px;
+.link {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+.container {
+    max-width: 720px;
+  }
+.link {
+    width: 100%;
+  }
+}
+
 @media (min-width: 576px) {
 .container {
     max-width: 540px;
+.link {
+    width: 100%;
+  }
   }
 }
 
@@ -67,11 +78,17 @@ background-color: rgba(156, 39, 176, 0.6) !important;
 }
 
 .footer {
-  position: fixed;
+  position: absolute;
   left: 0;
   bottom: 0;
   width: 100%;
   text-align: center;
+  background-color: lightblue;
+  color: black;
+  font-size: 12px;
+  opacity: 0.7;
+  padding: 5px;
+
 }
 
 </style>
@@ -83,33 +100,34 @@ background-color: rgba(156, 39, 176, 0.6) !important;
   <body class="w3-white">
     <!-- Content container -->
     <div class="container">
-    
-      <!-- Image and name container. Change to your picture here. -->
-    <!--<div class="image-container">-->
-    <!-- <img src="https://www.w3schools.com/howto/img_link_tree_template1_bio.jpg" class="w3-margin" alt="Photo by Art Hauntington" max-width="100%" height="150px" style="border-radius: 50%; alt=">
-    -->
-    <div class="w3-text-white">
-     <p class="w3-large">Welcome to my home page. Below is a link to my GIS portfolio, as well as some projects I was associated with.</p>
+      
+        <!-- Image and name container. Change to your picture here. -->
+      <!--<div class="image-container">-->
+      <!-- <img src="https://www.w3schools.com/howto/img_link_tree_template1_bio.jpg" class="w3-margin" alt="Photo by Art Hauntington" max-width="100%" height="150px" style="border-radius: 50%; alt=">
+      -->
+      <div class="w3-text-white">
+        <p class="w3-large">Welcome to my home page. Below is a link to my GIS portfolio, plus a few other projects I've worked on.</p>
       </div>
 
-    <!-- Links section 1. Replace the # inside of the "" with your links. -->
-    <div class="links-container w3-content">
-      <a href="pdfs\GIS Portfolio Draft.pdf" class="w3-button w3-hover-green w3-large w3-round-xlarge w3-light-green w3-border link w3-section" target="_blank"><i></i>GIS Portfolio</a>
-      <br>
-      <a href="pdfs\FaidigaEtAl_2023.pdf" class="w3-button w3-hover-green w3-large w3-round-xlarge w3-light-green w3-border link w3-section" target="_blank"><i></i>TENN Phenology Study: Faidiga et al. (2023)</a>
-      <br>
-      <a href="https://globaltcn.utk.edu/" class="w3-button w3-hover-green w3-large w3-round-xlarge w3-light-green w3-border link w3-section" target="_blank"><i></i>GLOBAL Bryophyte Project</a>
-      <br>
-    <!--<a href="pdfs\ShuEtAl2025.pdf" class="w3-button w3-hover-green w3-large w3-round-xlarge w3-light-green w3-border link w3-section" target="_blank"><i></i>ORNL Poplar Metablomics: Shu et al. (2025)</a>
-      <br>-->
-      <a href="https://www.linkedin.com/in/madison-dyer-23691b408" class="w3-button w3-hover-green w3-large w3-round-xlarge w3-light-green w3-border link w3-section" target="_blank"><i></i>LinkedIn</a>
+      <!-- Links section 1. Replace the # inside of the "" with your links. -->
+      <div class="links-container">
+        <a href="pdfs\GIS Portfolio Draft.pdf" class="w3-button w3-hover-green w3-large w3-round-xlarge w3-light-green w3-border link w3-section" style="text-wrap: pretty;" target="_blank"><i></i>GIS Portfolio</a>
+        <br>
+        <a href="pdfs\FaidigaEtAl_2023.pdf" class="w3-button w3-hover-green w3-large w3-round-xlarge w3-light-green w3-border link w3-section" style="text-wrap: pretty;" target="_blank"><i></i>TENN Phenology Study: Faidiga et al. (2023)</a>
+        <br>
+        <a href="https://globaltcn.utk.edu/" class="w3-button w3-hover-green w3-large w3-round-xlarge w3-light-green w3-border link w3-section" style="text-wrap: pretty;" target="_blank"><i></i>GLOBAL Bryophyte Project</a>
+        <br>
+      <!--<a href="pdfs\ShuEtAl2025.pdf" class="w3-button w3-hover-green w3-large w3-round-xlarge w3-light-green w3-border link w3-section" target="_blank"><i></i>ORNL Poplar Metablomics: Shu et al. (2025)</a>
+        <br>-->
+        <a href="https://www.linkedin.com/in/madison-dyer-23691b408" class="w3-button w3-hover-green w3-large w3-round-xlarge w3-light-green w3-border link w3-section" style="text-wrap: pretty;" target="_blank"><i></i>LinkedIn</a>
+      </div>
     </div>
   </div>
 
 
 </div>
 
-  <!-- Contact section 
+  <!-- Contact section
   <div class="w3-container w3-center w3-text-white w3-padding-32 w3-padding-large" id="contact">
     <div class="w3-content" style="max-width:500px">
       <h4 class="w3-center"><b>Get in touch.</b></h4>
@@ -131,12 +149,14 @@ background-color: rgba(156, 39, 176, 0.6) !important;
     </div> -->
     
   </div>  
+
+    <div class="footer">
+    <p>Photo Credit: <a href="https://commons.wikimedia.org/wiki/File:Hazy_blue_hour_in_Grand_Canyon.JPG">Michael Gäbler</a>, <a href="https://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>, via Wikimedia Commons</p>
+    <div>
+
   </body>
 
-  <div class="footer w3-light-blue w3-padding-small w3-small w3-opacity w3-margin-top">
-    <p>Photo Credit: <a href="https://commons.wikimedia.org/wiki/File:Hazy_blue_hour_in_Grand_Canyon.JPG">Michael Gäbler</a>, <a href="https://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>, via Wikimedia Commons
-    </p>
-    </div>
+
   
   
   
